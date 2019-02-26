@@ -4,7 +4,7 @@
 #
 Name     : zict
 Version  : 0.1.3
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/f2/a6/e1ccbb86f7d6dcaa545623f0c0ee1984697869e3c6a5d43bb6398616b389/zict-0.1.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f2/a6/e1ccbb86f7d6dcaa545623f0c0ee1984697869e3c6a5d43bb6398616b389/zict-0.1.3.tar.gz
 Summary  : Mutable mapping tools
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549029524
+export SOURCE_DATE_EPOCH=1551152259
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
