@@ -4,7 +4,7 @@
 #
 Name     : zict
 Version  : 0.1.4
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/68/1f/afc20e1273af4f38375650ea463276fddad7b035fd595c893aa2b5576d17/zict-0.1.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/68/1f/afc20e1273af4f38375650ea463276fddad7b035fd595c893aa2b5576d17/zict-0.1.4.tar.gz
 Summary  : Mutable mapping tools
