@@ -1,5 +1,5 @@
 PKG_NAME := zict
-URL = https://files.pythonhosted.org/packages/68/1f/afc20e1273af4f38375650ea463276fddad7b035fd595c893aa2b5576d17/zict-0.1.4.tar.gz
+URL = https://files.pythonhosted.org/packages/92/d2/426acddbdd2c79e9de9b80540c5529229f35cd28fd9ad965cbd16c0fc9fd/zict-1.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
