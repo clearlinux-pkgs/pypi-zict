@@ -4,7 +4,7 @@
 #
 Name     : zict
 Version  : 1.0.0
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/92/d2/426acddbdd2c79e9de9b80540c5529229f35cd28fd9ad965cbd16c0fc9fd/zict-1.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/92/d2/426acddbdd2c79e9de9b80540c5529229f35cd28fd9ad965cbd16c0fc9fd/zict-1.0.0.tar.gz
 Summary  : Mutable mapping tools
@@ -20,11 +20,14 @@ BuildRequires : buildreq-distutils3
 %description
 Zict
 ====
+
 |Build Status|
+
 Mutable Mapping interfaces.  See documentation_.
+
 .. _documentation: http://zict.readthedocs.io/en/latest/
 .. |Build Status| image:: https://travis-ci.org/dask/zict.svg?branch=master
-:target: https://travis-ci.org/dask/zict
+   :target: https://travis-ci.org/dask/zict
 
 %package license
 Summary: license components for the zict package.
@@ -47,6 +50,7 @@ python components for the zict package.
 Summary: python3 components for the zict package.
 Group: Default
 Requires: python3-core
+Provides: pypi(zict)
 
 %description python3
 python3 components for the zict package.
@@ -54,13 +58,15 @@ python3 components for the zict package.
 
 %prep
 %setup -q -n zict-1.0.0
+cd %{_builddir}/zict-1.0.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1561486170
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1582849071
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -76,7 +82,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/zict
-cp LICENSE.txt %{buildroot}/usr/share/package-licenses/zict/LICENSE.txt
+cp %{_builddir}/zict-1.0.0/LICENSE.txt %{buildroot}/usr/share/package-licenses/zict/7d92778d2dc6b5312893e7c25c4b05e3b602ec56
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -87,7 +93,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/zict/LICENSE.txt
+/usr/share/package-licenses/zict/7d92778d2dc6b5312893e7c25c4b05e3b602ec56
 
 %files python
 %defattr(-,root,root,-)
