@@ -4,7 +4,7 @@
 #
 Name     : zict
 Version  : 2.0.0
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/af/16/bb5ce16c6f109ced5abee8be13d9454719c8f60a22d518812af059e6c386/zict-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/af/16/bb5ce16c6f109ced5abee8be13d9454719c8f60a22d518812af059e6c386/zict-2.0.0.tar.gz
 Summary  : Mutable mapping tools
@@ -18,16 +18,11 @@ BuildRequires : HeapDict
 BuildRequires : buildreq-distutils3
 
 %description
-Zict
 ====
-
-|Build Status|
-
-Mutable Mapping interfaces.  See documentation_.
-
-.. _documentation: http://zict.readthedocs.io/en/latest/
-.. |Build Status| image:: https://travis-ci.org/dask/zict.svg?branch=master
-   :target: https://travis-ci.org/dask/zict
+        
+        |Build Status|
+        
+        Mutable Mapping interfaces.  See documentation_.
 
 %package license
 Summary: license components for the zict package.
@@ -51,6 +46,7 @@ Summary: python3 components for the zict package.
 Group: Default
 Requires: python3-core
 Provides: pypi(zict)
+Requires: pypi(heapdict)
 
 %description python3
 python3 components for the zict package.
@@ -65,15 +61,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583171697
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1603409410
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
