@@ -4,7 +4,7 @@
 #
 Name     : pypi-zict
 Version  : 2.0.0
-Release  : 28
+Release  : 29
 URL      : https://files.pythonhosted.org/packages/af/16/bb5ce16c6f109ced5abee8be13d9454719c8f60a22d518812af059e6c386/zict-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/af/16/bb5ce16c6f109ced5abee8be13d9454719c8f60a22d518812af059e6c386/zict-2.0.0.tar.gz
 Summary  : Mutable mapping tools
@@ -13,7 +13,7 @@ License  : BSD-3-Clause
 Requires: pypi-zict-license = %{version}-%{release}
 Requires: pypi-zict-python = %{version}-%{release}
 Requires: pypi-zict-python3 = %{version}-%{release}
-Requires: HeapDict
+Requires: pypi(heapdict)
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(heapdict)
 
@@ -61,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641407090
+export SOURCE_DATE_EPOCH=1641841162
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
