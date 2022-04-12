@@ -4,7 +4,7 @@
 #
 Name     : pypi-zict
 Version  : 2.1.0
-Release  : 30
+Release  : 31
 URL      : https://files.pythonhosted.org/packages/9d/ce/c9274cfa408d26140858628d55ffc414469f0a9d2b3e4fb28860a40ef182/zict-2.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9d/ce/c9274cfa408d26140858628d55ffc414469f0a9d2b3e4fb28860a40ef182/zict-2.1.0.tar.gz
 Summary  : Mutable mapping tools
@@ -60,7 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1645977782
+export SOURCE_DATE_EPOCH=1649798946
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
