@@ -4,7 +4,7 @@
 #
 Name     : pypi-zict
 Version  : 2.2.0
-Release  : 38
+Release  : 39
 URL      : https://files.pythonhosted.org/packages/96/ed/c4f036bf588841d18b49a97a7df65604461206b044dc1373c3fa25431c1d/zict-2.2.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/96/ed/c4f036bf588841d18b49a97a7df65604461206b044dc1373c3fa25431c1d/zict-2.2.0.tar.gz
 Summary  : Mutable mapping tools
